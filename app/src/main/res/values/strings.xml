@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Calculadora para los de progra</string>
+
+
+    <!-- Parciales numero  -->
+
+
+    <string name="parcial_1">1er parcial</string>
+    <string name="parcial_2">2do parcial</string>
+    <string name="parcial_3">3er parcial</string>
+    <string name="parcial_4">Final de finales</string>
+
+
+    <!-- Nombres de Materias -->
+    <string name="materia_0">Proba</string>
+    <string name="materia_1">Fisica </string>
+    <string name="materia_2">Quimica </string>
+    <string name="materia_3">Ingles </string>
+    <string name="materia_4">Orientacion IV</string>
+    <string name="materia_5">Metodos Agiles</string>
+    <string name="materia_6">Soporte de Software</string>
+    <string name="materia_7">Ing de Software</string>
+    <string name="materia_8">Labo</string>
+    <string name="materia_9">Proy Int</string>
+
+
+
+    <!-- encabezados -->
+    <string name="titulo1">Materias </string>
+    <string name="titulo2">Prom. General</string>
+    <string name="titulo3">Resumen</string>
+
+    <!-- Subtitulos -->
+    <string name="subtitulo1">1er Parcial</string>
+    <string name="subtitulo2">2do Parcial</string>
+    <string name="subtitulo3">3er Parcial</string>
+    <string name="subtitulo4">Prom. General</string>
+    <string name="subtitulo5">Extras</string>
+
+    <!-- Placeholders -->
+    <string name="placeholder">-</string>
+
+    <!-- Resumen -->
+    <string name="mejor">La Mejor Materia</string>
+    <string name="peor">La Peor Materia </string>
+
+</resources>

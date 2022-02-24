@@ -1,0 +1,1459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ecf0f2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Titulo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/titulo1"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:fontFamily="@font/staatliches"/>
+
+            <!-- PyE -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/materia_0"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0,1,2,3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_2"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_3"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_4"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2,3">
+
+                        <EditText
+                            android:id="@+id/pye0"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/pye1"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/pye2"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/pye3"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Fis -->
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/materia_1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0,1,2,3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_2"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_3"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_4"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2,3">
+
+                        <EditText
+                            android:id="@+id/fis0"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/fis1"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/fis2"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/fis3"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Quim -->
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/materia_2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0,1,2,3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_2"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_3"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_4"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2,3">
+
+                        <EditText
+                            android:id="@+id/qui0"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/qui1"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/qui2"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/qui3"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Ing -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView7">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/materia_3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0,1,2,3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_2"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_3"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_4"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2,3">
+
+                        <EditText
+                            android:id="@+id/ing0"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/ing1"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/ing2"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/ing3"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Ori -->
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/materia_4"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0,1,2,3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_2"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_3"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_4"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2,3">
+
+                        <EditText
+                            android:id="@+id/ojyp0"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/ojyp1"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/ojyp2"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/ojyp3"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Met Ag -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewMP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/materia_5"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0,1,2,3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_2"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_3"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_4"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2,3">
+
+                        <EditText
+                            android:id="@+id/mp0"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/mp1"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/mp2"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/mp3"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sop Sof -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewSS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/materia_6"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0,1,2,3">
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_2"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_3"
+                            android:textColor="@color/black" />
+
+
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_4"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2,3">
+
+                        <EditText
+                            android:id="@+id/ss0"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/ss1"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/ss2"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/ss3"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Ing sof -->
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/materia_7"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0,1,2,3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_2"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_3"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_4"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2,3">
+
+                        <EditText
+                            android:id="@+id/isb0"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/isb1"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/isb2"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/isb3"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Laboratotio -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/materia_8"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0,1,2,3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_2"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_3"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_4"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2,3">
+
+                        <EditText
+                            android:id="@+id/lab0"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/lab1"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/lab2"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/lab3"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/materia_9"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0,1,2,3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_2"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_3"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_4"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2,3">
+
+                        <EditText
+                            android:id="@+id/pi0"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/pi1"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/pi2"
+                            android:hint="@string/placeholder"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/pi3"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Titulo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/titulo2"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:fontFamily="@font/staatliches"/>
+
+            <!-- Promedio General -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/titulo2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0,1,2,3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_2"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_3"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/parcial_4"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1,2,3">
+
+                        <TextView
+                            android:id="@+id/gen0"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium"/>
+
+                        <TextView
+                            android:id="@+id/gen1"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium"/>
+
+                        <TextView
+                            android:id="@+id/gen2"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium"/>
+
+                        <TextView
+                            android:id="@+id/gen3"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/titulo3"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:fontFamily="@font/staatliches"/>
+
+            <!-- 1 Parc -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/subtitulo1"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/staatliches"/>
+
+            <!-- Mejor  -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/mejor"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0">
+
+                        <TextView
+                            android:id="@+id/mej1"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Worst materia  -->
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/peor"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0">
+
+                        <TextView
+                            android:id="@+id/peo1"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 2 Parc -->
+            <!-- Subitulo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/subtitulo2"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/staatliches"/>
+
+            <!-- Better  -->
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/mejor"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0">
+
+                        <TextView
+                            android:id="@+id/mej2"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- worst materia -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/peor"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0">
+
+                        <TextView
+                            android:id="@+id/peo2"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 3 Parc -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/subtitulo3"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/staatliches"/>
+
+
+            <!-- Better  -->
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/mejor"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0">
+
+                        <TextView
+                            android:id="@+id/mej3"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Worst  -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/peor"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0">
+
+                        <TextView
+                            android:id="@+id/peo3"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Prom Gen -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/subtitulo4"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/staatliches"/>
+
+            <!-- Better  -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/mejor"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0">
+
+                        <TextView
+                            android:id="@+id/mej4"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Peor  -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/peor"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0">
+
+                        <TextView
+                            android:id="@+id/peo4"
+                            android:text="@string/placeholder"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium"/>
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Reprobadas -->
+            <!-- Subitulo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/subtitulo5"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/staatliches"/>
+            <!-- Tarjeta -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/extras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/placeholder"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@android:drawable/ic_menu_send"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
